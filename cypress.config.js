@@ -2,6 +2,9 @@ const { defineConfig } = require('cypress');
 
 module.exports = defineConfig({
   e2e: {
+    // Deaktivieren der Support-Datei, falls nicht benötigt
+    supportFile: false,
+
     // URL des Servers, auf dem Ihre Frontend-Anwendung läuft
     baseUrl: 'http://localhost:8080',
 
